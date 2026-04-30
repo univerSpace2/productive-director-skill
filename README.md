@@ -20,10 +20,10 @@ Use `product-director` when you want Codex to evaluate or improve:
 ```text
 product-director-skill/
 ├── README.md
-└── product-director-skill/
-    └── skills/
-        └── product-director/
-            └── SKILL.md
+├── LICENSE
+└── skills/
+    └── product-director/
+        └── SKILL.md
 ```
 
 The distributable skill itself is the `product-director` folder. The `SKILL.md` file includes the required frontmatter fields:
@@ -36,24 +36,24 @@ The distributable skill itself is the `product-director` folder. The `SKILL.md` 
 ### With Codex Skill Installer
 
 ```text
-$skill-installer install https://github.com/univerSpace2/productive-director-skill/tree/main/product-director-skill/skills/product-director
+$skill-installer install https://github.com/univerSpace2/productive-director-skill/tree/main/skills/product-director
 ```
 
 After installation, restart Codex to pick up the new skill.
 
 ### With the skills CLI
 
-Install directly from the skill path:
-
-```bash
-npx skills add https://github.com/univerSpace2/productive-director-skill/tree/main/product-director-skill/skills/product-director -g -a codex
-```
-
-If you later move the skill to a top-level `skills/product-director` directory, you can also use repository discovery:
+Install from repository discovery:
 
 ```bash
 npx skills add univerSpace2/productive-director-skill --list
 npx skills add univerSpace2/productive-director-skill --skill product-director -g -a codex
+```
+
+Or install directly from the skill folder URL:
+
+```bash
+npx skills add https://github.com/univerSpace2/productive-director-skill/tree/main/skills/product-director -g -a codex
 ```
 
 ## Verify
@@ -94,4 +94,4 @@ Check whether this AI-generated feature is merely executable or actually correct
 
 ## License
 
-Add a `LICENSE` file before publishing if you want others to reuse or modify this skill under explicit terms.
+This project is released under the terms in [LICENSE](LICENSE).
