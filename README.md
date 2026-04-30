@@ -33,12 +33,10 @@ The distributable skill itself is the `product-director` folder. The `SKILL.md` 
 
 ## Install
 
-Replace `YOUR_NAME` with the GitHub owner or organization where this repository is published.
-
 ### With Codex Skill Installer
 
 ```text
-$skill-installer install https://github.com/YOUR_NAME/product-director-skill/tree/main/product-director-skill/skills/product-director
+$skill-installer install https://github.com/univerSpace2/productive-director-skill/tree/main/product-director-skill/skills/product-director
 ```
 
 After installation, restart Codex to pick up the new skill.
@@ -48,14 +46,14 @@ After installation, restart Codex to pick up the new skill.
 Install directly from the skill path:
 
 ```bash
-npx skills add https://github.com/YOUR_NAME/product-director-skill/tree/main/product-director-skill/skills/product-director -g -a codex
+npx skills add https://github.com/univerSpace2/productive-director-skill/tree/main/product-director-skill/skills/product-director -g -a codex
 ```
 
 If you later move the skill to a top-level `skills/product-director` directory, you can also use repository discovery:
 
 ```bash
-npx skills add YOUR_NAME/product-director-skill --list
-npx skills add YOUR_NAME/product-director-skill --skill product-director -g -a codex
+npx skills add univerSpace2/productive-director-skill --list
+npx skills add univerSpace2/productive-director-skill --skill product-director -g -a codex
 ```
 
 ## Verify
